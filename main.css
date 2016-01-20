@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+}
+.wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  z-index: 1;
+  background-image: url('https://images.unsplash.com/photo-1444508171337-7e9a94250602?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=44310f23698170fd349d0bfdb63f55c4');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  -webkit-filter: blur(3px);
+  
+          filter: blur(3px);
+}
+.mask {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.position {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.87);
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+h1 {
+  font-family: 'Roboto Slab';
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+hr {
+  width: 5em;
+  height: 2px;
+  background-color: #FF9800;
+  border: 0;
+  border-radius: 1px;
+  margin: 1.5em auto 1.25em;
+}
+p {
+  font-family: 'anemone', 'Roboto Slab';
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
