@@ -1,0 +1,60 @@
+.position--center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba($primary-dark, 0.6), rgba($primary-dark, 0.6)), url(/assets/img/hero-bg.jpg);
+  background-size: cover;
+  background-position: bottom center;
+
+  &__wrapper {
+    display: block;
+    max-width: 960px;
+    width: 80%;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  &__subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: em(14);
+    color: #fff;
+    position: absolute;
+    top: 35px;
+  }
+  &__quote {
+    font-family: 'anemone', serif;
+    font-size: em(116);
+    font-weight: 400;
+    text-align: center;
+    line-height: 0.9;
+    color: #fff;
+    @include font-smoothing;
+    padding: 0;
+    margin: 0;
+  }
+  &__author {
+    font-family: 'Roboto Slab', serif;
+    font-size: em(18);
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+  }
+  &__cta {
+    font-family: 'Roboto Slab', serif;
+    background: transparent;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: em(28);
+    outline: none;
+    height: em(56);
+    width: em(168);
+    margin: 0 auto;
+    color: #fff;
+  }
+}

@@ -9,12 +9,21 @@ var uglify      = require('gulp-uglify');
 var del         = require('del');
 var reload      = browserSync.reload;
 
+var filesToMove = './source/assets/**/*.*'
+
 // Delete files in build before rebuild
 // ------------------------------------
 gulp.task('clean:build', function () {
   return del([
-    'build/**',
+    'build/**/*',
   ]);
+});
+
+// Move assets over to build
+// ------------------------------------
+gulp.task('move', function(){
+  gulp.src(filesToMove, { base: 'source' })
+  .pipe(gulp.dest('build'));
 });
 
 // Compile jade files to minified html
@@ -57,7 +66,7 @@ gulp.task('uncss', function () {
 // ----------------------------------------------------------------------------
 gulp.task('dev', [ 'clean:build', 'jade', 'css']);
 
-gulp.task('prod', ['clean:build', 'jade', 'css', 'uncss']);
+gulp.task('prod', ['clean:build', 'jade', 'css', 'uncss', 'move']);
 
 
 // Watch
@@ -66,10 +75,10 @@ gulp.task('watch', ['prod'], function () {
   browserSync.init({
     server: 'build'
   })
-  gulp.watch('source/**/*.jade', ['jade']);
-  gulp.watch('source/**/*.scss', ['css']);
+  gulp.watch('source/**/*.jade', ['jade']).on('change', reload);
+  gulp.watch('source/**/*.scss', ['css']).on('change', reload);
   //gulp.watch(source + '/**/*.js', ['js']);
-  gulp.watch('source/**/*.html').on('change', reload);
+  gulp.watch('source/**/*.html');
 });
 
 // Default

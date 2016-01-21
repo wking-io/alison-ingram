@@ -1,0 +1,55 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 60px;
+  height: 3.75rem;
+  background: transparent;
+  z-index: 999;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    max-width: 960px;
+    width: 80%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+
+    &__title {
+      flex-grow: 1;
+      margin: 0;
+      padding: 0;
+      @include font-smoothing;
+      color: #fff;
+      font-family: "Roboto Slab", serif;
+      font-weight: 700;
+      font-size: em(26);
+    }
+    &__links {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    &__links li {
+      list-style-type: none;
+      display: inline;
+      padding: 0 1em;
+      margin: 0;
+      @include font-smoothing;
+      display: inline;
+      font-family: "Roboto Slab", serif;
+      font-weight: 400;
+    }
+    &__links li a {
+      margin: 0 0 0 1em;
+      padding: 0;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
