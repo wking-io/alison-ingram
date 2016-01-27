@@ -1,8 +1,92 @@
 .about {
   width: 100vw;
-  min-height: 100vh;
-  background-image: url();
-  background-color: #eee;
+  height: auto;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/assets/img/about-bg.png) no-repeat center;
   background-size: cover;
-  background-position: bottom center;
+  margin: 0;
+  padding: 0;
+
+  &__title {
+    color: $primary-color;
+    font-family: 'anemone', sans-serif;
+    font-weight: 400;
+    font-size: em(90px);
+    text-align: center;
+    margin: 0;
+    padding: 1em 0 0 0;
+    z-index: 2;
+
+    &--bg {
+      color: rgba($primary-color,0.18);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: em(98px);
+      text-align: center;
+      margin: -98px 0 0 0;
+      padding: 0;
+      z-index: 1;
+    }
+    &--divider {
+      display: block;
+      width: 20vw;
+      margin: 1rem auto 4rem auto;
+    }
+
+  }
+
+  &__text-divider {
+    border: none;
+    height: 3px;
+    width: 15vw;
+    margin: 0 auto 1.5em auto;
+    background: $accent-color;
+  }
+
+  &__image {
+    display: block;
+    width: 80vw;
+    max-width: 770px;
+    height: calc(80vw*.55);
+    margin: 2em auto;
+  }
+
+  &__headline {
+    font-family: 'raleway', sans-serif;
+    font-size: em(36px);
+    line-height: 1.2;
+    color: $primary-color;
+    max-width: 770px;
+    width: 80vw;
+    margin: 1em auto;
+    text-align: center;
+  }
+}
+
+.wrapper__two-column {
+  display: flex;
+  max-width: 770px;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 0 0 4em 0;
+
+  &--column-one {
+    font-family: 'Roboto Slab', serif;
+    width: 50%;
+    padding-right: 1.5em;
+
+    & p {
+      color: $text-color-dark;
+      text-indent: em(18px);
+    }
+  }
+  &--column-two {
+    font-family: 'Roboto Slab', serif;
+    width: 50%;
+    padding-left: 1.5em;
+  }
+
+  & p {
+    color: $text-color-dark;
+    text-indent: em(18px);
+  }
 }

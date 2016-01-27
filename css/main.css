@@ -484,8 +484,76 @@ nav {
 
 .about {
   width: 100vw;
-  min-height: 100vh;
-  background-image: url();
-  background-color: #eee;
+  height: auto;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/assets/img/about-bg.png) no-repeat center;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/assets/img/about-bg.png) no-repeat center;
   background-size: cover;
-  background-position: bottom center; }
+  margin: 0;
+  padding: 0; }
+  .about__title {
+    color: #2C3E50;
+    font-family: 'anemone', sans-serif;
+    font-weight: 400;
+    font-size: 5.625em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0 0 0;
+    z-index: 2; }
+    .about__title--bg {
+      color: rgba(44, 62, 80, 0.18);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 6.125em;
+      text-align: center;
+      margin: -98px 0 0 0;
+      padding: 0;
+      z-index: 1; }
+    .about__title--divider {
+      display: block;
+      width: 20vw;
+      margin: 1rem auto 4rem auto; }
+  .about__text-divider {
+    border: none;
+    height: 3px;
+    width: 15vw;
+    margin: 0 auto 1.5em auto;
+    background: #DCB570; }
+  .about__image {
+    display: block;
+    width: 80vw;
+    max-width: 770px;
+    height: calc(80vw*.55);
+    margin: 2em auto; }
+  .about__headline {
+    font-family: 'raleway', sans-serif;
+    font-size: 2.25em;
+    line-height: 1.2;
+    color: #2C3E50;
+    max-width: 770px;
+    width: 80vw;
+    margin: 1em auto;
+    text-align: center; }
+
+.wrapper__two-column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 770px;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 0 0 4em 0; }
+  .wrapper__two-column--column-one {
+    font-family: 'Roboto Slab', serif;
+    width: 50%;
+    padding-right: 1.5em; }
+    .wrapper__two-column--column-one p {
+      color: rgba(44, 62, 80, 0.87);
+      text-indent: 1.125em; }
+  .wrapper__two-column--column-two {
+    font-family: 'Roboto Slab', serif;
+    width: 50%;
+    padding-left: 1.5em; }
+  .wrapper__two-column p {
+    color: rgba(44, 62, 80, 0.87);
+    text-indent: 1.125em; }
