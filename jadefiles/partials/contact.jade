@@ -1,0 +1,29 @@
+section.contact
+  h2.contact__title Contact
+  p.contact__title--bg 06
+  img.contact__title--divider(src="/assets/img/leaf-divider.png")
+
+  form.form.floating-labels
+    fieldset
+      legend Contact Information
+      .form__error
+        p Please enter a valid email address
+        
+      .icon
+        label.label.float(for="name") Name
+        input.user(type="text" name="name" id="name" required)
+        
+      .icon
+        label.label(for="school") School
+        input.school(type="text" name="school" id="school" required)
+        
+      .icon
+        label.label(for="email") Email
+        input.email.error(type="text" name="email" id="email" required)
+        
+      .icon 
+        label.label(for="textarea") Message
+        textarea.message(type="text" name="textarea" id="textarea" required)
+        
+      div 
+        input(type="submit" value="Send Message")

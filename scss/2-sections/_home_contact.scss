@@ -1,0 +1,266 @@
+.contact {
+  width: 100vw;
+  height: auto;
+  background: #bg-color;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+
+  &__title {
+    color: $primary-color;
+    font-family: $display-font;
+    font-weight: 400;
+    font-size: em(90px);
+    text-align: center;
+    margin: 0;
+    padding: 1em 0 0 0;
+    z-index: 2;
+
+    &--bg {
+      color: rgba($primary-color,0.18);
+      font-family: $sans-font;
+      font-weight: 700;
+      font-size: em(98px);
+      text-align: center;
+      margin: -98px 0 0 0;
+      padding: 0;
+      z-index: 1;
+    }
+    &--divider {
+      display: block;
+      width: 20vw;
+      margin: 1rem auto 4rem auto;
+    }
+  }
+
+  .form {
+    width: 90%;
+    max-width: $M;
+    margin: 4em auto;
+    @include clearfix;
+
+    fieldset {
+      margin: 24px 0;
+      width: 100%;
+    }
+
+    legend {
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-family: $serif-font;
+      font-size: 2rem;
+      border-bottom: 1px solid rgba($primary-color, 0.25);
+    }
+
+    div {
+      position: relative;
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    .label {
+      font-size: 1.3rem;
+      color: rgba($primary-color, 0.57);
+      margin-bottom: 10px;
+      display: block;
+    }
+    input, textarea, select, label {
+  		font-family: $sans-font;
+  		font-size: 1.6rem;
+  		color: $primary-color;
+  	}
+
+    input[type="text"],
+  	input[type="email"],
+    input[type="submit"],
+  	textarea,
+  	select,
+  	legend {
+  		display: block;
+  		width: 100%;
+  		@include appearance(none);
+  	}
+
+    input[type="text"],
+  	input[type="email"],
+  	textarea,
+  	select {
+  		padding: 12px;
+  		border: 1px solid rgba($primary-color, 0.50);
+  		background-color: $bg-color;
+  		border-radius: .25em;
+  		box-shadow: inset 0 1px 1px rgba(#000, .08);
+
+  		&:focus {
+  			outline: none;
+  			border-color: $accent-color;
+  			box-shadow: 0 0 5px rgba($accent-color, .5);
+  		}
+  	}
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+      overflow: auto;
+    }
+
+    input[type="submit"] {
+  		/* button style */
+  		border: none;
+  		background: $btn-color;
+  		border-radius: .25em;
+  		padding: 16px 20px;
+  		color: $bg-color;
+  		font-weight: bold;
+  		float: right;
+  		cursor: pointer;
+      transition: all .2s ease-out;
+  		@include font-smoothing;
+  		@include appearance(none);
+
+      &:hover {
+        background: $btn-hover;
+      }
+
+      &:focus {
+        outline: none;
+        background: $primary-color;
+      }
+
+      &:active {
+  			@include transform(scale(.95));
+        background: darken($btn-hover, 20%);
+  		}
+    }
+
+    &__error p {
+  		background: $error-color;
+  		color: $bg-color;
+  		font-size: 1.4rem;
+  		text-align: center;
+  		@include font-smoothing;
+  		border-radius: .25em;
+  		padding: 16px;
+    }
+
+  	.error {
+  		border-color: $error-color !important;
+  	}
+
+    @include MQ(M) {
+  		div {
+  			/* form element wrapper */
+  			margin: 32px 0;
+  		}
+
+  			legend + div {
+  			/* reduce margin-top for first form element after the legend */
+  			margin-top: 20px;
+  		}
+
+  		h4, .cd-label {
+  			font-size: 1.4rem;
+  			margin-bottom: 10px;
+  		}
+
+  		input[type="text"],
+  		input[type="email"],
+  		textarea,
+  		select {
+  			padding: 16px;
+  		}
+  	}
+  }
+
+  /* --------------------------------
+
+  Custom icons
+
+  -------------------------------- */
+
+  .form {
+    .icon input, .icon select, .icon textarea {
+  		padding-left: 54px !important;
+  	}
+
+    .user {
+  		background: url('/assets/img/cd-icon-user.svg') no-repeat 16px center;
+  	}
+
+    [required].user {
+  		background: url('/assets/img/cd-icon-user.svg') no-repeat 16px center,
+  					url('/assets/img/cd-required.svg') no-repeat top right;
+  	}
+
+    .school {
+  		background: url('/assets/img/cd-icon-company.svg') no-repeat 16px center;
+  	}
+
+  	[required].school {
+  		background: url('/assets/img/cd-icon-company.svg') no-repeat 16px center,
+  					url('/assets/img/cd-required.svg') no-repeat top right;
+  	}
+
+  	.email {
+  		background: url('/assets/img/cd-icon-email.svg') no-repeat 16px center;
+  	}
+
+  	[required].email {
+  		background: url('/assets/img/cd-icon-email.svg') no-repeat 16px center,
+  					url('/assets/img/cd-required.svg') no-repeat top right;
+  	}
+
+    .message {
+  		background: url('/assets/img/cd-icon-message.svg') no-repeat 16px 16px;
+  	}
+
+  	[required].message {
+  		background: url('/assets/img/cd-icon-message.svg') no-repeat 16px 16px,
+  					url('/assets/img/cd-required.svg') no-repeat top right;
+  	}
+  }
+
+  /* --------------------------------
+
+  FLoating labels
+
+  -------------------------------- */
+
+  .floating-labels {
+  	div {
+  		margin: 28px 0;
+  	}
+
+  	.label {
+  		position: absolute;
+  		top: 16px;
+  		left: 16px;
+  		font-size: 1.6rem;
+  		cursor: text;
+  		@include transition(top .2s, left .2s, font-size .2s);
+  	}
+
+  	.icon .label {
+  		left: 56px;
+  	}
+
+  	.label.float {
+  		/* move label out the input field */
+  		font-size: 1.2rem;
+  		top: -16px;
+  		left: 0 !important;
+  	}
+
+  	@include MQ(M) {
+
+  		legend + div {
+  			/* reduce margin-top for first form element after the legend */
+  			margin-top: 16px;
+  		}
+
+  		.label {
+  			top: 20px;
+  		}
+  	}
+  }
+}
