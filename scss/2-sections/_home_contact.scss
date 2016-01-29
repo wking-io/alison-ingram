@@ -184,40 +184,20 @@
   		padding-left: 54px !important;
   	}
 
-    .user {
+    [required].user {
   		background: url('/assets/img/cd-icon-user.svg') no-repeat 16px center;
   	}
 
-    [required].user {
-  		background: url('/assets/img/cd-icon-user.svg') no-repeat 16px center,
-  					url('/assets/img/cd-required.svg') no-repeat top right;
-  	}
-
-    .school {
+  	[required].school {
   		background: url('/assets/img/cd-icon-company.svg') no-repeat 16px center;
   	}
 
-  	[required].school {
-  		background: url('/assets/img/cd-icon-company.svg') no-repeat 16px center,
-  					url('/assets/img/cd-required.svg') no-repeat top right;
-  	}
-
-  	.email {
+  	[required].email {
   		background: url('/assets/img/cd-icon-email.svg') no-repeat 16px center;
   	}
 
-  	[required].email {
-  		background: url('/assets/img/cd-icon-email.svg') no-repeat 16px center,
-  					url('/assets/img/cd-required.svg') no-repeat top right;
-  	}
-
-    .message {
-  		background: url('/assets/img/cd-icon-message.svg') no-repeat 16px 16px;
-  	}
-
   	[required].message {
-  		background: url('/assets/img/cd-icon-message.svg') no-repeat 16px 16px,
-  					url('/assets/img/cd-required.svg') no-repeat top right;
+  		background: url('/assets/img/cd-icon-message.svg') no-repeat 16px 16px;
   	}
   }
 

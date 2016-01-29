@@ -767,22 +767,14 @@ nav {
         padding: 16px; } }
   .contact .form .icon input, .contact .form .icon select, .contact .form .icon textarea {
     padding-left: 54px !important; }
-  .contact .form .user {
-    background: url("/assets/img/cd-icon-user.svg") no-repeat 16px center; }
   .contact .form [required].user {
-    background: url("/assets/img/cd-icon-user.svg") no-repeat 16px center, url("/assets/img/cd-required.svg") no-repeat top right; }
-  .contact .form .school {
-    background: url("/assets/img/cd-icon-company.svg") no-repeat 16px center; }
+    background: url("/assets/img/cd-icon-user.svg") no-repeat 16px center; }
   .contact .form [required].school {
-    background: url("/assets/img/cd-icon-company.svg") no-repeat 16px center, url("/assets/img/cd-required.svg") no-repeat top right; }
-  .contact .form .email {
-    background: url("/assets/img/cd-icon-email.svg") no-repeat 16px center; }
+    background: url("/assets/img/cd-icon-company.svg") no-repeat 16px center; }
   .contact .form [required].email {
-    background: url("/assets/img/cd-icon-email.svg") no-repeat 16px center, url("/assets/img/cd-required.svg") no-repeat top right; }
-  .contact .form .message {
-    background: url("/assets/img/cd-icon-message.svg") no-repeat 16px 16px; }
+    background: url("/assets/img/cd-icon-email.svg") no-repeat 16px center; }
   .contact .form [required].message {
-    background: url("/assets/img/cd-icon-message.svg") no-repeat 16px 16px, url("/assets/img/cd-required.svg") no-repeat top right; }
+    background: url("/assets/img/cd-icon-message.svg") no-repeat 16px 16px; }
   .contact .floating-labels div {
     margin: 28px 0; }
   .contact .floating-labels .label {
