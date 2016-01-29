@@ -134,6 +134,7 @@
     }
 
     &__error p {
+      display: none;
   		background: $error-color;
   		color: $bg-color;
   		font-size: 1.4rem;

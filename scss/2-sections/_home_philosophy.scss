@@ -1,0 +1,54 @@
+.philosophy {
+  width: 100vw;
+  height: auto;
+  background: $bg-color;
+  margin: 0;
+  padding: 0;
+
+  &__title {
+    color: $primary-color;
+    font-family: 'anemone', sans-serif;
+    font-weight: 400;
+    font-size: em(90px);
+    text-align: center;
+    margin: 0;
+    padding: 1em 0 0 0;
+    z-index: 2;
+
+    &--bg {
+      color: rgba($primary-color,0.18);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: em(98px);
+      text-align: center;
+      margin: -98px 0 0 0;
+      padding: 0;
+      z-index: 1;
+    }
+    &--divider {
+      display: block;
+      width: 20vw;
+      margin: 1rem auto 4rem auto;
+    }
+  }
+
+  &__headline {
+    font-family: 'raleway', sans-serif;
+    font-size: em(36px);
+    line-height: 1.2;
+    color: $primary-color;
+    max-width: 770px;
+    width: 80vw;
+    margin: 0 auto;
+    padding: .35em 0;
+    text-align: center;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-indent {
+  text-indent: 0 !important;
+}

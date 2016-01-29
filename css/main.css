@@ -491,9 +491,7 @@ nav {
 .about {
   width: 100vw;
   height: auto;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/assets/img/about-bg.png) no-repeat center;
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/assets/img/about-bg.png) no-repeat center;
-  background-size: cover;
+  background: #FBFCFC;
   margin: 0;
   padding: 0; }
   .about__title {
@@ -563,6 +561,51 @@ nav {
   .wrapper__two-column p {
     color: rgba(44, 62, 80, 0.87);
     text-indent: 1.125em; }
+
+.philosophy {
+  width: 100vw;
+  height: auto;
+  background: #FBFCFC;
+  margin: 0;
+  padding: 0; }
+  .philosophy__title {
+    color: #2C3E50;
+    font-family: 'anemone', sans-serif;
+    font-weight: 400;
+    font-size: 5.625em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0 0 0;
+    z-index: 2; }
+    .philosophy__title--bg {
+      color: rgba(44, 62, 80, 0.18);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 6.125em;
+      text-align: center;
+      margin: -98px 0 0 0;
+      padding: 0;
+      z-index: 1; }
+    .philosophy__title--divider {
+      display: block;
+      width: 20vw;
+      margin: 1rem auto 4rem auto; }
+  .philosophy__headline {
+    font-family: 'raleway', sans-serif;
+    font-size: 2.25em;
+    line-height: 1.2;
+    color: #2C3E50;
+    max-width: 770px;
+    width: 80vw;
+    margin: 0 auto;
+    padding: .35em 0;
+    text-align: center; }
+
+.no-padding {
+  padding: 0; }
+
+.no-indent {
+  text-indent: 0 !important; }
 
 .contact {
   width: 100vw;
@@ -696,6 +739,7 @@ nav {
         transform: scale(0.95);
         background: #7b6234; }
     .contact .form__error p {
+      display: none;
       background: #EF233C;
       color: #FBFCFC;
       font-size: 1.4rem;
