@@ -1,0 +1,79 @@
+.education {
+  width: 100vw;
+  height: auto;
+  @include retina-image(/assets/img/education-bg, cover, jpg);
+  background-position: center;
+  margin: 0;
+  padding: 0;
+
+  &__title {
+    color: $text-color-light;
+    font-family: 'anemone', sans-serif;
+    font-weight: 400;
+    font-size: em(90px);
+    text-align: center;
+    margin: 0;
+    padding: 1em 0 0 0;
+    z-index: 2;
+
+    &--bg {
+      color: rgba($text-color-light,0.18);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: em(98px);
+      text-align: center;
+      margin: -98px 0 0 0;
+      padding: 0;
+      z-index: 1;
+    }
+    &--divider {
+      display: block;
+      width: 20vw;
+      margin: 1rem auto 4rem auto;
+    }
+  }
+
+  &__three-column {
+    display: flex;
+    justify-content: center;
+    max-width: 960px;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 6rem 0 8rem 0;
+    //align-items: center;
+
+    &--column {
+      width: 33%;
+      padding: .5em;
+    }
+
+    &--column img {
+      height: em(56);
+      opacity: 0.87;
+      margin: 0 auto;
+      padding: 0;
+      display: block;
+    }
+
+    &--column h3,
+    &--column p {
+      color: white;
+      text-align: center;
+    }
+
+    &--column h3 {
+      font-family: $sans-font;
+      font-weight: 700;
+      font-size: em(16);
+      @include font-smoothing;
+    }
+
+    &--column p {
+      font-family: $serif-font;
+      font-weight: 400;
+      font-size: em(14);
+      @include font-smoothing;
+    }
+  }
+
+}
