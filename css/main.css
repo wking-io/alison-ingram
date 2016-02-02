@@ -562,6 +562,35 @@ nav {
     color: rgba(44, 62, 80, 0.87);
     text-indent: 1.125em; }
 
+.experience {
+  width: 100vw;
+  height: auto;
+  background: #F2F3F3;
+  margin: 0;
+  padding: 0; }
+  .experience__title {
+    color: #2C3E50;
+    font-family: 'anemone', sans-serif;
+    font-weight: 400;
+    font-size: 5.625em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0 0 0;
+    z-index: 2; }
+    .experience__title--bg {
+      color: rgba(44, 62, 80, 0.18);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 6.125em;
+      text-align: center;
+      margin: -98px 0 0 0;
+      padding: 0;
+      z-index: 1; }
+    .experience__title--divider {
+      display: block;
+      width: 20vw;
+      margin: 1rem auto 4rem auto; }
+
 .philosophy {
   width: 100vw;
   height: auto;
