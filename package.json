@@ -1,17 +1,13 @@
 {
-  "name": "alison-ingram",
+  "name": "d3-test",
   "version": "1.0.0",
-  "description": "Resume site for, soon to be graduate of Auburn's Elementary Education program, Alison Ingram.",
-  "main": "gulpfile.js",
+  "description": "Test charts using d3.js.",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "resume",
-    "static",
-    "website",
-    "sass",
-    "jade"
+    "analytics"
   ],
   "author": "William King",
   "license": "MIT",

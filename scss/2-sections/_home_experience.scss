@@ -1,12 +1,12 @@
 .experience {
   width: 100vw;
   height: auto;
-  background: #F2F3F3;
+  background: #19242F linear-gradient(#2C3E50, #19242F);
   margin: 0;
   padding: 0;
 
   &__title {
-    color: $primary-color;
+    color: $text-color-light;
     font-family: 'anemone', sans-serif;
     font-weight: 400;
     font-size: em(90px);
@@ -16,7 +16,7 @@
     z-index: 2;
 
     &--bg {
-      color: rgba($primary-color,0.18);
+      color: rgba($text-color-light,0.18);
       font-family: 'Raleway', sans-serif;
       font-weight: 700;
       font-size: em(98px);
@@ -29,6 +29,121 @@
       display: block;
       width: 20vw;
       margin: 1rem auto 4rem auto;
+    }
+  }
+
+  &__card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 960px;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 2em 0 3em 0
+  }
+  &__card {
+    background: #fff;
+    width: 48%;
+    margin: 1em 0;
+    padding: 0 2em;
+    @include shadow(1);
+    transition: all .1s ease-out;
+
+    &:hover {
+      @include shadow(2);
+    }
+    &--icon {
+      display: block;
+      margin: 0 auto;
+      width: 13%;
+      padding: 2em 0 0 0;
+    }
+
+    &--title {
+      font-family: $sans-font;
+      font-weight: 700;
+      font-size: em(18);
+      text-align: center;
+      color: $primary-color;
+      margin: em(13) 0 0 0;
+      padding: 0;
+    }
+
+    &--subtitle {
+      font-family: $sans-font;
+      font-weight: 500;
+      font-size: em(14);
+      text-align: center;
+      color: $primary-color;
+      opacity: 0.57;
+      margin: em(6) 0 em(26) 0;
+      padding: 0;
+    }
+
+    &--text-box {
+      background: #F4F5F6;
+      margin: 0 -2em ;
+      padding: 2em;
+      & p {
+        font-family: $serif-font;
+        font-weight: 400;
+        font-size: em(15);
+        text-align: center;
+        color: $primary-color;
+        margin: 0;
+      }
+    }
+  }
+
+  &__section-break {
+    width: 10vw;
+    margin-bottom: 3em;
+    height: 2px;
+    border: none;
+    border-radius: 2px;
+    background: $text-color-light;
+    color: $text-color-light;
+  }
+
+  &__subheading {
+    color: $text-color-light;
+    text-align: center;
+    font-family: $serif-font;
+    font-size: em(22);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    &--subtitle {
+      color: $text-color-light;
+      text-align: center;
+      font-family: $sans-font;
+      font-style: italic;
+      margin-top: .35em;
+      padding-top: 0;
+    }
+  }
+
+  &__three-column {
+    display: flex;
+    justify-content: center;
+    max-width: 960px;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 6rem 0 8rem 0;
+    //align-items: center;
+
+    &--column {
+      width: 33%;
+      padding: .5em;
+    }
+
+    &--column img {
+      height: em(40);
+      display: inline;
+    }
+
+    &--column h4 {
+      color: $text-color-light;
+      display: inline;
     }
   }
 }

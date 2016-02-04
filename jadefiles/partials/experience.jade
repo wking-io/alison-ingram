@@ -2,3 +2,37 @@ section.experience
   h2.experience__title Experience
   p.experience__title--bg 02
   img.experience__title--divider(src="/assets/img/leaf-divider.png")
+  
+  mixin card(title, subtitle, description)
+    .experience__card
+      img.experience__card--icon(src="/assets/img/school.svg")
+      h3.experience__card--title=title
+      h4.experience__card--subtitle=subtitle
+      .experience__card--text-box
+        p=description
+  
+  .experience__card-wrapper      
+    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
+    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
+    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
+    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
+    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
+    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
+    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
+    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
+
+  hr.experience__section-break
+  
+  h3.experience__subheading Certification & Training
+  p.experience__subheading--subtitle (details in full resume)
+  
+  .experience__three-column
+    .experience__three-column--column
+      img(src="/assets/img/praxis.svg")
+      h4 Praxis Completed
+    .experience__three-column--column
+      img(src="/assets/img/amsti.svg")
+      h4 AMSTI Certified
+    .experience__three-column--column
+      img(src="/assets/img/ari_book.svg")
+      h4 Alabama Reading Initiative (ARI) Trained

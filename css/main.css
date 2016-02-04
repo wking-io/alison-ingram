@@ -369,6 +369,10 @@ th {
 body {
   font-size: 1.6rem; }
 
+h1, h2, h3, h4, h5, h6, p, span, div {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 nav {
   position: fixed;
   top: 0;
@@ -565,11 +569,12 @@ nav {
 .experience {
   width: 100vw;
   height: auto;
-  background: #F2F3F3;
+  background: #19242F -webkit-linear-gradient(#2C3E50, #19242F);
+  background: #19242F linear-gradient(#2C3E50, #19242F);
   margin: 0;
   padding: 0; }
   .experience__title {
-    color: #2C3E50;
+    color: rgba(255, 255, 255, 0.87);
     font-family: 'anemone', sans-serif;
     font-weight: 400;
     font-size: 5.625em;
@@ -578,7 +583,7 @@ nav {
     padding: 1em 0 0 0;
     z-index: 2; }
     .experience__title--bg {
-      color: rgba(44, 62, 80, 0.18);
+      color: rgba(255, 255, 255, 0.18);
       font-family: 'Raleway', sans-serif;
       font-weight: 700;
       font-size: 6.125em;
@@ -590,6 +595,109 @@ nav {
       display: block;
       width: 20vw;
       margin: 1rem auto 4rem auto; }
+  .experience__card-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 960px;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 2em 0 3em 0; }
+  .experience__card {
+    background: #fff;
+    width: 48%;
+    margin: 1em 0;
+    padding: 0 2em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all .1s ease-out;
+            transition: all .1s ease-out; }
+    .experience__card:hover {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    .experience__card--icon {
+      display: block;
+      margin: 0 auto;
+      width: 13%;
+      padding: 2em 0 0 0; }
+    .experience__card--title {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 1.125em;
+      text-align: center;
+      color: #2C3E50;
+      margin: 0.8125em 0 0 0;
+      padding: 0; }
+    .experience__card--subtitle {
+      font-family: "Raleway", sans-serif;
+      font-weight: 500;
+      font-size: 0.875em;
+      text-align: center;
+      color: #2C3E50;
+      opacity: 0.57;
+      margin: 0.375em 0 1.625em 0;
+      padding: 0; }
+    .experience__card--text-box {
+      background: #F4F5F6;
+      margin: 0 -2em;
+      padding: 2em; }
+      .experience__card--text-box p {
+        font-family: "Roboto Slab", serif;
+        font-weight: 400;
+        font-size: 0.9375em;
+        text-align: center;
+        color: #2C3E50;
+        margin: 0; }
+  .experience__section-break {
+    width: 10vw;
+    margin-bottom: 3em;
+    height: 2px;
+    border: none;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.87);
+    color: rgba(255, 255, 255, 0.87); }
+  .experience__subheading {
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.375em;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+    .experience__subheading--subtitle {
+      color: rgba(255, 255, 255, 0.87);
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+      font-style: italic;
+      margin-top: .35em;
+      padding-top: 0; }
+  .experience__three-column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 960px;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 6rem 0 8rem 0; }
+    .experience__three-column--column {
+      width: 33%;
+      padding: .5em; }
+    .experience__three-column--column img {
+      height: 2.5em;
+      display: inline; }
+    .experience__three-column--column h4 {
+      color: rgba(255, 255, 255, 0.87);
+      display: inline; }
 
 .philosophy {
   width: 100vw;
