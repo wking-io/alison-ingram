@@ -381,7 +381,9 @@ nav {
   min-height: 60px;
   height: 3.75rem;
   background: transparent;
-  z-index: 999; }
+  z-index: 999;
+  -webkit-transition: all .5s ease-out;
+          transition: all .5s ease-out; }
 
 .nav {
   display: -webkit-box;
@@ -408,13 +410,14 @@ nav {
         -ms-flex-positive: 1;
             flex-grow: 1;
     margin: 0;
-    padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.87);
     font-family: "Roboto Slab", serif;
     font-weight: 700;
-    font-size: 1.625em; }
+    font-size: 1.625em;
+    -webkit-transition: all .5s ease-out;
+            transition: all .5s ease-out; }
   .nav__links {
     margin: 0;
     padding: 0;
@@ -422,18 +425,22 @@ nav {
   .nav__links li {
     list-style-type: none;
     display: inline;
-    padding: 0 1em;
+    padding: 16.5px 1em;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: inline;
     font-family: "Roboto Slab", serif;
-    font-weight: 400; }
+    font-weight: 400;
+    -webkit-transition: all .2s ease-out;
+            transition: all .2s ease-out; }
   .nav__links li a {
-    margin: 0 0 0 1em;
-    padding: 0;
-    color: #fff;
-    text-decoration: none; }
+    margin: 0;
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: none;
+    -webkit-transition: all .5s ease-out;
+            transition: all .5s ease-out;
+    height: 100%; }
 
 .position--center {
   position: relative;
@@ -462,7 +469,9 @@ nav {
     font-size: 0.875em;
     color: #fff;
     position: absolute;
-    top: 35px; }
+    top: 35px;
+    -webkit-transition: all .5s ease-out;
+            transition: all .5s ease-out; }
   .hero__quote {
     font-family: 'anemone', serif;
     font-size: 7.25em;
@@ -530,7 +539,6 @@ nav {
     display: block;
     width: 80vw;
     max-width: 770px;
-    height: calc(80vw*.55);
     margin: 2em auto; }
   .about__headline {
     font-family: 'raleway', sans-serif;
@@ -640,11 +648,11 @@ nav {
       font-size: 0.875em;
       text-align: center;
       color: #2C3E50;
-      opacity: 0.57;
+      opacity: 0.67;
       margin: 0.375em 0 1.625em 0;
       padding: 0; }
     .experience__card--text-box {
-      background: #F4F5F6;
+      background: #e6e8eb;
       margin: 0 -2em;
       padding: 2em; }
       .experience__card--text-box p {

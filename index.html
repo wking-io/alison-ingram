@@ -8,14 +8,15 @@
     <title>Alison Ingram | Elementary Education</title>
   </head>
   <body>
-    <nav>
+    <nav id="nav-bar">
       <div class="nav">
-        <h1 class="nav__title">Alison Ingram</h1>
+        <h1 id="nav-type" class="nav__title">Alison Ingram</h1>
         <ul class="nav__links">
-          <li> <a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#philosophy">Philosophy</a></li>
-          <li><a href="#education">Education</a></li><a href="#contact" class="nav__mail"><img src="/assets/img/email.svg"></a>
+          <li id="border-about"> <a id="nav-about" href="#about">About</a></li>
+          <li id="border-experience"><a id="nav-experience" href="#experience">Experience</a></li>
+          <li id="border-philosophy"><a id="nav-philosophy" href="#philosophy">Philosophy</a></li>
+          <li id="border-education"><a id="nav-education" href="#education">Education</a></li>
+          <li id="border-contact"><a id="nav-contact" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -31,9 +32,9 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <h2 class="about__title">About Me</h2>
-        <p class="about__title--bg">01</p><img src="/assets/img/leaf-divider.png" class="about__title--divider"><img src="/assets/img/headshot.jpg" class="about__image">
+        <p class="about__title--bg">01</p><img src="/assets/img/leaf-divider.png" class="about__title--divider"><img src="/assets/img/about-bg.png" class="about__image">
         <h3 class="about__headline">The math lessons using fractions, indeed, prove true. There’s no other way to say it: the sum of me is one half of my mother and one half of my father.</h3>
         <hr class="about__text-divider">
         <div class="wrapper__two-column">
@@ -49,7 +50,7 @@
           </div>
         </div>
       </section>
-      <section class="experience">
+      <section id="experience" class="experience">
         <h2 class="experience__title">Experience</h2>
         <p class="experience__title--bg">02</p><img src="/assets/img/leaf-divider.png" class="experience__title--divider">
         <div class="experience__card-wrapper">     
@@ -129,7 +130,7 @@
           <button class="experience__cta--button">Resume PDF</button>
         </div>
       </section>
-      <section class="philosophy">
+      <section id="philosophy" class="philosophy">
         <h2 class="philosophy__title">Teaching Philosophy</h2>
         <p class="philosophy__title--bg">04</p><img src="/assets/img/leaf-divider.png" class="philosophy__title--divider">
         <div class="wrapper__two-column no-padding">
@@ -152,7 +153,7 @@
           </div>
         </div>
       </section>
-      <section class="education">
+      <section id="education" class="education">
         <h2 class="education__title">Education</h2>
         <p class="education__title--bg">05</p><img src="/assets/img/leaf-divider.png" class="education__title--divider">
         <div class="education__three-column"> 
@@ -170,7 +171,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <h2 class="contact__title">Contact</h2>
         <p class="contact__title--bg">06</p><img src="/assets/img/leaf-divider.png" class="contact__title--divider">
         <form class="form floating-labels">
@@ -203,6 +204,7 @@
       </section>
     </main>
     <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <script src="js/main.min.js" type="text/javascript"></script>
+    <script src="js/smoothScroll.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
   </body>
 </html>

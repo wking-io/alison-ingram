@@ -7,6 +7,7 @@ nav {
   height: 3.75rem;
   background: transparent;
   z-index: 999;
+  transition: all .5s ease-out;
 }
 .nav {
   display: flex;
@@ -23,12 +24,12 @@ nav {
   &__title {
     flex-grow: 1;
     margin: 0;
-    padding: 0;
     @include font-smoothing;
-    color: #fff;
+    color: $text-color-light;
     font-family: "Roboto Slab", serif;
     font-weight: 700;
     font-size: em(26);
+    transition: all .5s ease-out;
   }
   &__links {
     margin: 0;
@@ -38,17 +39,19 @@ nav {
   &__links li {
     list-style-type: none;
     display: inline;
-    padding: 0 1em;
+    padding: 16.5px 1em;
     margin: 0;
     @include font-smoothing;
     display: inline;
     font-family: "Roboto Slab", serif;
     font-weight: 400;
+    transition: all .2s ease-out;
   }
   &__links li a {
-    margin: 0 0 0 1em;
-    padding: 0;
-    color: #fff;
+    margin: 0;
+    color: $text-color-light;
     text-decoration: none;
+    transition: all .5s ease-out;
+    height: 100%;
   }
 }

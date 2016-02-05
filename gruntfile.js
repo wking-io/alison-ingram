@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 				tasks: ['jade']
 			},
       uglify: {
-        files: ['js/**/*.js'],
+        files: ['js/main.js'],
         tasks: ['uglify']
       }
 		},
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 				files: {
 					'js/main.min.js': ['js/main.js'],
 					// 'js/modernizr.min.js': ['js/modernizr.js'],
-					'js/jquery-2.1.1.min.js': ['js/jquery-2.1.1.js']
+					//'js/jquery-2.1.1.min.js': ['js/jquery-2.1.1.js']
 				}
 			}
 		},
