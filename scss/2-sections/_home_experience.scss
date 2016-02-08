@@ -165,10 +165,10 @@
     &--button {
       border: none;
       outline: none;
-      border-radius: 5px;
-      background: darken($accent-color, 10%);
+      border-radius: em(28);
+      background: $accent-color;
       padding: 1em;
-      min-height: em(57);
+      min-height: em(56);
       min-width: em(180);
       color: $text-color-light;
       font-family: $serif-font;
@@ -178,7 +178,7 @@
       transition: all .2s ease-out;
 
       &:hover {
-        background: darken($accent-color, 15%);
+        background: #BA985B;
       }
       &:active {
         background: darken($accent-color, 17%);

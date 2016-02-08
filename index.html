@@ -10,31 +10,32 @@
   <body>
     <nav id="nav-bar">
       <div class="nav">
-        <h1 id="nav-type" class="nav__title">Alison Ingram</h1>
+        <h1 id="nav-type" class="nav__title"> <a href="#hero" class="smoothScroll">Alison Ingram</a></h1>
         <ul class="nav__links">
-          <li id="border-about"> <a id="nav-about" href="#about">About</a></li>
-          <li id="border-experience"><a id="nav-experience" href="#experience">Experience</a></li>
-          <li id="border-philosophy"><a id="nav-philosophy" href="#philosophy">Philosophy</a></li>
-          <li id="border-education"><a id="nav-education" href="#education">Education</a></li>
-          <li id="border-contact"><a id="nav-contact" href="#contact">Contact</a></li>
+          <li id="border-about"> <a id="nav-about" href="#about" class="smoothScroll">About</a></li>
+          <li id="border-experience"><a id="nav-experience" href="#experience" class="smoothScroll">Experience</a></li>
+          <li id="border-philosophy"><a id="nav-philosophy" href="#philosophy" class="smoothScroll">Philosophy</a></li>
+          <li id="border-education"><a id="nav-education" href="#education" class="smoothScroll">Education</a></li>
+          <li id="border-contact"><a id="nav-contact" href="#contact" class="smoothScroll">Contact</a></li>
         </ul>
       </div>
     </nav>
     <main>
-      <section class="hero">
-        <div class="blur--background"></div>
+      <section id="hero" class="hero">
         <div class="hero__wrapper">
-          <p class="hero__subtitle">Elementary Education</p>
-          <div class="position--center">
-            <h1 class="hero__quote">"And then I realized adventures are the best way to learn"</h1>
-            <p class="hero__author">-Anonymous</p>
-            <button class="hero__cta">Read more below</button>
+          <div class="hero__wrapper--content">
+            <h1 class="hero__title">Alison Ingram</h1>
+            <p class="hero__subtitle">Elementary Education</p>
+            <p class="hero__content">“Education helps children establish their character. I hope I never forget the immense responsibility it is to shape the future in both intelligence, but most importantly character.”</p>
+            <p class="hero__content">Read more about me and my education experience below.</p>
+            <div class="button-wrapper"><a href="#about" class="hero__cta smoothScroll">More about me</a><a href="#" target="_blank" class="hero__cta--secondary">View my resume</a></div>
           </div>
         </div>
       </section>
       <section id="about" class="about">
         <h2 class="about__title">About Me</h2>
-        <p class="about__title--bg">01</p><img src="/assets/img/leaf-divider.png" class="about__title--divider"><img src="/assets/img/about-bg.png" class="about__image">
+        <p class="about__title--bg">01</p><img src="/assets/img/leaf-divider.png" class="about__title--divider">
+        <!-- img.about__image(src="/assets/img/about-bg.png")-->
         <h3 class="about__headline">The math lessons using fractions, indeed, prove true. There’s no other way to say it: the sum of me is one half of my mother and one half of my father.</h3>
         <hr class="about__text-divider">
         <div class="wrapper__two-column">
@@ -174,7 +175,7 @@
       <section id="contact" class="contact">
         <h2 class="contact__title">Contact</h2>
         <p class="contact__title--bg">06</p><img src="/assets/img/leaf-divider.png" class="contact__title--divider">
-        <form class="form floating-labels">
+        <form role="form" method="post" action="php/contactForm.php" class="form floating-labels">
           <fieldset>
             <legend>Contact Information</legend>
             <div class="form__error">
@@ -190,7 +191,7 @@
             </div>
             <div class="icon">
               <label for="email" class="label">Email</label>
-              <input type="text" name="email" id="email" required class="email">
+              <input type="text" name="email" id="email" onBlur="validateEmail(value)" required class="email">
             </div>
             <div class="icon"> 
               <label for="textarea" class="label">Message</label>

@@ -8,7 +8,7 @@
 .hero {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba($primary-dark, 0.6), rgba($primary-dark, 0.6)), url(/assets/img/hero-bg.jpg);
+  background: linear-gradient(rgba($primary-dark, 0.3), rgba($primary-dark, 0.3)), url(/assets/img/alison_cropped.jpg);
   background-size: cover;
   background-position: bottom center;
 
@@ -19,43 +19,69 @@
     height: 100%;
     padding: 0;
     margin: 0 auto;
+
+    &--content {
+      width: 375px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
-  &__subtitle {
-    font-family: 'Raleway', sans-serif;
-    font-size: em(14);
-    color: #fff;
-    position: absolute;
-    top: 35px;
-    transition: all .5s ease-out;
-  }
-  &__quote {
-    font-family: 'anemone', serif;
-    font-size: em(116);
+  &__title {
+    font-family: $display-font;
+    font-size: em(72);
     font-weight: 400;
-    text-align: center;
-    line-height: 0.9;
-    color: #fff;
-    @include font-smoothing;
-    padding: .25em 0 0 0;
+    color: $text-color-light;
     margin: 0;
   }
-  &__author {
-    font-family: 'Roboto Slab', serif;
-    font-size: em(18);
-    text-align: center;
+  &__subtitle {
+    font-family: $sans-font;
+    font-size: em(14);
     color: #fff;
-    padding: 30px;
+    transition: all .5s ease-out;
+    margin: 0;
+  }
+  &__content {
+    font-family: $serif-font;
+    font-size: em(17);
+    color: #fff;
+
+    &--secondary {
+      margin-bottom: 1em;
+    }
   }
   &__cta {
-    font-family: 'Roboto Slab', serif;
-    background: transparent;
-    display: block;
-    border: 2px solid #fff;
-    border-radius: em(28);
+    font-family: $sans-font;
+    text-decoration: none;
+    font-size: em(15);
+    text-align: center;
+    background: $accent-color;
+    display: inline;
+    border: none;
+    border-radius: em(23);
     outline: none;
-    height: em(56);
-    width: em(168);
-    margin: 0 auto;
+    padding: .85em 2em;
     color: #fff;
+    transition: all .2s ease-out;
+
+    &:hover {
+      background: #BA985B;
+    }
+
+    &--secondary {
+      @extend .hero__cta;
+      display: inline;
+      background: rgba(255, 255, 255, 0.3);
+      margin-left: 20px;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+    }
   }
+}
+
+.button-wrapper {
+  height: em(46);
+  padding: em(23) 0;
 }

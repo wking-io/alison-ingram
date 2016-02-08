@@ -133,20 +133,28 @@
   		}
     }
 
-    &__error p {
+    &__error {
       display: none;
-  		background: $error-color;
-  		color: $bg-color;
-  		font-size: 1.4rem;
-  		text-align: center;
-  		@include font-smoothing;
-  		border-radius: .25em;
-  		padding: 16px;
+
+      & p {
+    		background: $error-color;
+    		color: $bg-color;
+    		font-size: 1.4rem;
+    		text-align: center;
+    		@include font-smoothing;
+    		border-radius: .25em;
+    		padding: 16px;
+      }
     }
 
   	.error {
   		border-color: $error-color !important;
+      transition: all .2s ease-out;
   	}
+    .success {
+      border-color: $success-color !important;
+      transition: all .2s ease-out;
+    }
 
     @include MQ(M) {
   		div {

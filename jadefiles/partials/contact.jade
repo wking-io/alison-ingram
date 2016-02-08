@@ -3,7 +3,7 @@ section.contact#contact
   p.contact__title--bg 06
   img.contact__title--divider(src="/assets/img/leaf-divider.png")
 
-  form.form.floating-labels
+  form.form.floating-labels(role="form" method="post" action="php/contactForm.php")
     fieldset
       legend Contact Information
       .form__error
@@ -19,7 +19,7 @@ section.contact#contact
         
       .icon
         label.label(for="email") Email
-        input.email(type="text" name="email" id="email" required)
+        input.email(type="text" name="email" id="email" onBlur="validateEmail(value)" required)
         
       .icon 
         label.label(for="textarea") Message
