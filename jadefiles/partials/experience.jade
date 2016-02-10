@@ -3,23 +3,24 @@ section.experience#experience
   p.experience__title--bg 02
   img.experience__title--divider(src="/assets/img/leaf-divider.png")
   
-  mixin card(title, subtitle, description)
+  mixin card(pretitle, title, subtitle, description)
     .experience__card
       img.experience__card--icon(src="/assets/img/school.svg")
+      h4.experience__card--pretitle=pretitle
       h3.experience__card--title=title
       h4.experience__card--subtitle=subtitle
       .experience__card--text-box
         p=description
-  
-  .experience__card-wrapper      
-    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
-    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
-    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
-    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
-    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
-    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
-    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
-    +card("Vestavia Hills Elementary East", "2nd Grade - Vestavia Hills, AL", "Here will go an adequate amount of good stuff about school activities. My task and a short summary of how I helped make it awesome.")
+  .experience__wrapper
+    .experience__card-wrapper     
+      +card("Internship Experience", "Vestavia Hills Elementary East", "2nd Grade - Spring 2016", "Co-planned and team-taught along side my cooperating teacher. Completed ten days of nonconsecutive teaching. Planned and taught ten full consecutive days of teaching. This included planning curriculum, including assessments and classroom management. During this time, I attended grade level meetings and faculty meetings. I observed other grade levels, the media specialist, the music teacher, and parent-teacher conferences. I also attended Open House and multiple field trips.")
+      +card("Practicum Experience", "West Smiths Station Elementary School", "4th Grade - Spring 2015", "Observed and participated in a classroom setting. Created and implemented multiple whole group and small group lessons (specifically Language Arts and Social Studies). These lessons were created based off of state and school-wide curriculum standards.")
+      +card("Music Experience", "Reeltown Elementary School", "Kindergarten - Spring 2015", "Created integrates lessons using Arts Education standards, along with other curriculum standards for whole group instruction. These lessons included music, art, science, social studies, and technology.")
+    .experience__card-wrapper
+      +card("Practicum Experience", "Wrights Mill Road Elementary School", "3rd Grade - Fall 2015", "Observed and participated in a classroom setting. Created and implemented multiple whole group and small group lessons (specifically Math and Science). These lessons were created based off of state and school-wide curriculum standards.")
+      +card("Reading and Literacy Experience", "Loachapoka Elementary School", "2nd Grade - Fall 2014", "Tutored a struggling reader once a week for the entire semester. Created lessons to help develop phonemic awareness and fluency.")
+      +card("Service Learning Experience", "Southview Primary School", "Kindergarten/2nd Grade - Fall 2014", "Met once a week for two hours to tutor both a kindergartener and a 2nd grader.")
+      +card("Observing and Aiding", "Redland Elementary School", "2nd Grade - Fall 2012", "Observed for a full school week. I helped by grading papers, participated in one-on-one tutoring, and led whole group arts and crafts activities.")
 
   hr.experience__section-break
   
