@@ -2,7 +2,9 @@
   width: 100vw;
   height: auto;
   @include retina-image(/assets/img/education-bg, cover, jpg);
-  background-position: center;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
 
@@ -28,7 +30,7 @@
     }
     &--divider {
       display: block;
-      width: 20vw;
+      width: 25rem;
       margin: 1rem auto 4rem auto;
     }
   }
@@ -76,4 +78,110 @@
     }
   }
 
+}
+
+@media (max-width: $M) {
+  .education {
+    &__three-column {
+      display: flex;
+      justify-content: center;
+      max-width: 960px;
+      width: 80vw;
+      margin: 0 auto;
+      padding: 6rem 0 8rem 0;
+      //align-items: center;
+
+      &--column {
+        width: 33%;
+        padding: .5em;
+      }
+
+      &--column img {
+        height: em(56);
+        opacity: 0.87;
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+      }
+
+      &--column h3,
+      &--column p {
+        color: white;
+        text-align: center;
+      }
+
+      &--column h3 {
+        font-family: $sans-font;
+        font-weight: 700;
+        font-size: em(16);
+        @include font-smoothing;
+      }
+
+      &--column p {
+        font-family: $serif-font;
+        font-weight: 400;
+        font-size: em(14);
+        @include font-smoothing;
+      }
+    }
+  }
+}
+
+@media (max-width: $S) {
+  .education {
+    &__title {
+      font-size: em(60px);
+
+      &--bg {
+        font-size: em(78px);
+        margin: -75px 0 0 0;
+      }
+      &--divider {
+        width: 20rem;
+      }
+    }
+    &__three-column {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 960px;
+      width: 80vw;
+      margin: 0 auto;
+      padding: 2rem 0 8rem 0;
+      //align-items: center;
+
+      &--column {
+        width: 100%;
+        padding: .5em;
+      }
+
+      &--column img {
+        height: em(56);
+        opacity: 0.87;
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+      }
+
+      &--column h3,
+      &--column p {
+        color: white;
+        text-align: center;
+      }
+
+      &--column h3 {
+        font-family: $sans-font;
+        font-weight: 700;
+        font-size: em(16);
+        @include font-smoothing;
+      }
+
+      &--column p {
+        font-family: $serif-font;
+        font-weight: 400;
+        font-size: em(14);
+        @include font-smoothing;
+      }
+    }
+  }
 }

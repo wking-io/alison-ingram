@@ -28,7 +28,7 @@
     }
     &--divider {
       display: block;
-      width: 20vw;
+      width: 25rem;
       margin: 1rem auto 4rem auto;
     }
   }
@@ -251,5 +251,27 @@
   			top: 20px;
   		}
   	}
+  }
+}
+
+@media (max-width: $M) {
+  .contact {
+  }
+}
+
+@media (max-width: $S) {
+  .contact {
+    &__title {
+      font-size: em(60px);
+
+      &--bg {
+        font-size: em(78px);
+        margin: -75px 0 0 0;
+      }
+      &--divider {
+        width: 20rem;
+      }
+
+    }
   }
 }

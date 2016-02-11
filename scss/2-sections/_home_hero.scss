@@ -86,3 +86,50 @@
   height: em(46);
   padding: em(23) 0;
 }
+
+@media (max-width: $S) {
+  .hero {
+    &__wrapper {
+
+      &--content {
+        width: 80%;
+        position: absolute;
+        font-size: em(14);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &__cta {
+      font-size: em(15);
+      font-weight: 600;
+      text-align: center;
+      background: $accent-color;
+      display: block;
+      border: none;
+      border-radius: em(23);
+      outline: none;
+      padding: .85em 2em;
+      color: #fff;
+      transition: all .2s ease-out;
+
+      &:hover {
+        background: #BA985B;
+      }
+
+      &--secondary {
+        display: inline;
+        background: rgba(255, 255, 255, 0.3);
+        margin: 1em 0 0 0;
+        display: block;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+
+  .button-wrapper {
+    padding-bottom: em(40);
+  }
+}

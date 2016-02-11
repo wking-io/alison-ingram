@@ -27,7 +27,7 @@
     }
     &--divider {
       display: block;
-      width: 20vw;
+      width: 25rem;
       margin: 1rem auto 4rem auto;
     }
   }
@@ -207,4 +207,91 @@
 
 .width-constrain {
   width: 59px !important;
+}
+
+.no-desktop {
+  display: none;
+}
+
+@media (max-width: $M) {
+  .experience {
+    &__wrapper {
+      width: 65vw;
+    }
+    &__card-wrapper {
+      width: 100%;
+    }
+    &__three-column {
+      flex-direction: row;
+      padding: 8rem 0 6rem 0;
+      //align-items: center;
+
+      &--column {
+        display: block;
+      }
+
+      &--column img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      &--column h4 {
+        text-align: center;
+        padding: 0;
+      }
+    }
+  }
+  .no-desktop {
+    display: block;
+  }
+}
+
+@media (max-width: $S) {
+  .experience {
+    &__title {
+      font-size: em(60px);
+
+      &--bg {
+        font-size: em(78px);
+        margin: -75px 0 0 0;
+      }
+      &--divider {
+        width: 20rem;
+      }
+    }
+    &__section-break {
+      margin-bottom: 3em;
+    }
+    &__wrapper {
+      width: 80vw;
+      padding: 0 0 3em 0;
+    }
+    &__three-column {
+      flex-direction: column;
+      &--column {
+        width: 100%;
+      }
+    }
+    &__cta {
+      &--message {
+        font-size: em(20);
+        margin-bottom: 2em;
+      }
+      &--button {
+        border: none;
+        outline: none;
+        border-radius: em(28);
+        background: $accent-color;
+        padding: .8em;
+        min-height: em(56);
+        min-width: em(180);
+        color: $text-color-light;
+        font-family: $serif-font;
+        font-weight: 400;
+        margin: 0 auto;
+        display: block;
+        transition: all .2s ease-out;
+      }
+    }
+  }
 }
