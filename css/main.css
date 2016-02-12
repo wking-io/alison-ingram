@@ -567,8 +567,8 @@ nav {
 .hero {
   width: 100vw;
   height: 100vh;
-  background: -webkit-linear-gradient(rgba(22, 31, 40, 0.3), rgba(22, 31, 40, 0.3)), url(/assets/img/alison_cropped.jpg);
-  background: linear-gradient(rgba(22, 31, 40, 0.3), rgba(22, 31, 40, 0.3)), url(/assets/img/alison_cropped.jpg);
+  background: -webkit-linear-gradient(rgba(22, 31, 40, 0.3), rgba(22, 31, 40, 0.3)), url(/assets/img/alison_cropped@0.5x.jpg);
+  background: linear-gradient(rgba(22, 31, 40, 0.3), rgba(22, 31, 40, 0.3)), url(/assets/img/alison_cropped@0.5x.jpg);
   background-size: cover;
   background-position: bottom center; }
   .hero__wrapper {
@@ -632,37 +632,50 @@ nav {
   height: 2.875em;
   padding: 1.4375em 0; }
 
+@media (-webkit-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .hero {
+    background: -webkit-linear-gradient(rgba(22, 31, 40, 0.3), rgba(22, 31, 40, 0.3)), url(/assets/img/alison_cropped.jpg);
+    background: linear-gradient(rgba(22, 31, 40, 0.3), rgba(22, 31, 40, 0.3)), url(/assets/img/alison_cropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; } }
 @media (max-width: 430px) {
-  .hero__wrapper--content {
-    width: 80%;
-    position: absolute;
-    font-size: 0.875em;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
-  .hero__cta, .hero__cta--secondary {
-    font-size: 0.9375em;
-    font-weight: 600;
-    text-align: center;
-    background: #DCB570;
-    display: block;
-    border: none;
-    border-radius: 1.4375em;
-    outline: none;
-    padding: .85em 2em;
-    color: #fff;
-    -webkit-transition: all .2s ease-out;
-            transition: all .2s ease-out; }
-    .hero__cta:hover, .hero__cta--secondary:hover {
-      background: #BA985B; }
-    .hero__cta--secondary {
-      display: inline;
-      background: rgba(255, 255, 255, 0.3);
-      margin: 1em 0 0 0;
-      display: block; }
-      .hero__cta--secondary:hover {
-        background: rgba(255, 255, 255, 0.5); }
+  .hero {
+    background: -webkit-linear-gradient(rgba(22, 31, 40, 0.3), rgba(22, 31, 40, 0.3)), url(/assets/img/alison_cropped@0.5x.jpg);
+    background: linear-gradient(rgba(22, 31, 40, 0.3), rgba(22, 31, 40, 0.3)), url(/assets/img/alison_cropped@0.5x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .hero__wrapper--content {
+      width: 80%;
+      position: absolute;
+      font-size: 0.875em;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .hero__cta, .hero__cta--secondary {
+      font-size: 0.9375em;
+      font-weight: 600;
+      text-align: center;
+      background: #DCB570;
+      display: block;
+      border: none;
+      border-radius: 1.4375em;
+      outline: none;
+      padding: .85em 2em;
+      color: #fff;
+      -webkit-transition: all .2s ease-out;
+              transition: all .2s ease-out; }
+      .hero__cta:hover, .hero__cta--secondary:hover {
+        background: #BA985B; }
+      .hero__cta--secondary {
+        display: inline;
+        background: rgba(255, 255, 255, 0.3);
+        margin: 1em 0 0 0;
+        display: block; }
+        .hero__cta--secondary:hover {
+          background: rgba(255, 255, 255, 0.5); }
 
   .button-wrapper {
     padding-bottom: 2.5em; } }

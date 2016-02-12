@@ -8,7 +8,7 @@
 .hero {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba($primary-dark, 0.3), rgba($primary-dark, 0.3)), url(/assets/img/alison_cropped.jpg);
+  background: linear-gradient(rgba($primary-dark, 0.3), rgba($primary-dark, 0.3)), url(/assets/img/alison_cropped@0.5x.jpg);
   background-size: cover;
   background-position: bottom center;
 
@@ -87,8 +87,20 @@
   padding: em(23) 0;
 }
 
+@media (-webkit-device-pixel-ratio: 2), (min-resolution: 120dpi) {
+  .hero {
+    background: linear-gradient(rgba($primary-dark, 0.3), rgba($primary-dark, 0.3)), url(/assets/img/alison_cropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 @media (max-width: $S) {
   .hero {
+    background: linear-gradient(rgba($primary-dark, 0.3), rgba($primary-dark, 0.3)), url(/assets/img/alison_cropped@0.5x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     &__wrapper {
 
       &--content {
