@@ -186,13 +186,15 @@
       background: $accent-color;
       padding: 1em;
       min-height: em(56);
-      min-width: em(180);
+      max-width: em(180);
       color: $text-color-light;
       font-family: $serif-font;
       font-weight: 400;
       margin: 0 auto;
       display: block;
       transition: all .2s ease-out;
+      text-decoration: none;
+      text-align: center;
 
       &:hover {
         background: #BA985B;

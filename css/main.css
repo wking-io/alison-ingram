@@ -962,14 +962,16 @@ nav {
       background: #DCB570;
       padding: 1em;
       min-height: 3.5em;
-      min-width: 11.25em;
+      max-width: 11.25em;
       color: rgba(255, 255, 255, 0.87);
       font-family: "Roboto Slab", serif;
       font-weight: 400;
       margin: 0 auto;
       display: block;
       -webkit-transition: all .2s ease-out;
-              transition: all .2s ease-out; }
+              transition: all .2s ease-out;
+      text-decoration: none;
+      text-align: center; }
       .experience__cta--button:hover {
         background: #BA985B; }
       .experience__cta--button:active {
