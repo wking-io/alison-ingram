@@ -982,6 +982,9 @@ nav {
 .no-desktop {
   display: none; }
 
+.no-marg {
+  margin-bottom: 0; }
+
 @media (max-width: 820px) {
   .experience__wrapper {
     width: 65vw; }
@@ -1015,6 +1018,10 @@ nav {
       width: 20rem; }
   .experience__section-break {
     margin-bottom: 3em; }
+  .experience__pretitle {
+    font-size: 0.75em; }
+  .experience__subtitle {
+    font-size: 0.75em; }
   .experience__wrapper {
     width: 80vw;
     padding: 0 0 3em 0; }

@@ -13,7 +13,7 @@ $(document).ready(function($){
     } else {
       $("#nav-bar").css('display', 'none');
     }
-
+    //underline on current page
     if ($(document).scrollTop() >= anchorAbout && $(document).scrollTop() < anchorExperience) {
       $("#border-about").css('border-bottom', '3px solid #2C3E50');
       $("#border-experience, #border-philosophy, #border-education, #border-contact").css('border-bottom', 'none');
@@ -32,6 +32,7 @@ $(document).ready(function($){
     } else {
       $("#border-about, #border-experience, #border-philosophy, #border-education, #border-contact").css('border-bottom', 'none');
     }
+    //end underline
   });
   //end nav background change on scroll
 
@@ -41,6 +42,13 @@ $(document).ready(function($){
     $('#menu').toggleClass('menu-open');
   });
   //end hamburger toggle
+
+  //menu close on link click
+  $('#mobile-about, #mobile-experience, #mobile-philosophy, #mobile-education, #mobile-contact').click(function(){
+    $('.nav__icon').toggleClass('open');
+    $('#menu').toggleClass('menu-open');
+  });
+  //end menu close
 
   //Floating Labels function
   if( $('.floating-labels').length > 0 ) floatLabels();

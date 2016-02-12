@@ -213,6 +213,10 @@
   display: none;
 }
 
+.no-marg {
+  margin-bottom: 0;
+}
+
 @media (max-width: $M) {
   .experience {
     &__wrapper {
@@ -261,6 +265,12 @@
     }
     &__section-break {
       margin-bottom: 3em;
+    }
+    &__pretitle {
+      font-size: em(12);
+    }
+    &__subtitle {
+      font-size: em(12);
     }
     &__wrapper {
       width: 80vw;
