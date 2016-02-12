@@ -58,7 +58,7 @@ module.exports = function(grunt) {
 			my_target: {
 				files: {
 					'js/main.min.js': ['js/main.js'],
-					// 'js/modernizr.min.js': ['js/modernizr.js'],
+					'js/smoothScroll.min.js': ['js/smoothScroll.js'],
 					//'js/jquery-2.1.1.min.js': ['js/jquery-2.1.1.js']
 				}
 			}
