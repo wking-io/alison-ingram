@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+$(document).ready(function($){
   //variables
   var anchorAbout       = $('#about').offset().top,
       anchorExperience  = $('#experience').offset().top,
@@ -35,6 +35,13 @@ jQuery(document).ready(function($){
   });
   //end nav background change on scroll
 
+  //hamburger toggle
+  $('.nav__icon').click(function(){
+    $(this).toggleClass('open');
+    $('#menu').toggleClass('menu-open');
+  });
+  //end hamburger toggle
+
   //Floating Labels function
   if( $('.floating-labels').length > 0 ) floatLabels();
 
@@ -54,10 +61,9 @@ jQuery(document).ready(function($){
 		( inputField.val() == '' ) ? inputField.prev('.label').removeClass('float') : inputField.prev('.label').addClass('float');
 	}
   //end Floating Labels function
-
-  //Email Validation
 });
 
+//Email Validation
 function validateEmail(email){
   var emailTest = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 

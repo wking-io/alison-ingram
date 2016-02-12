@@ -4,15 +4,23 @@ nav#nav-bar
       a.smoothScroll(href="#hero") Alison Ingram
 
     ul.nav__links
-      li#border-about 
-        a#nav-about.smoothScroll(href="#about") About
-      li#border-experience
-        a#nav-experience.smoothScroll(href="#experience") Experience
-      li#border-philosophy
-        a#nav-philosophy.smoothScroll(href="#philosophy") Philosophy
-      li#border-education
-        a#nav-education.smoothScroll(href="#education") Education
-      li#border-contact
-        a#nav-contact.smoothScroll(href="#contact") Contact
-      
-  
+      li#border-about: a#nav-about.smoothScroll(href="#about") About
+      li#border-experience: a#nav-experience.smoothScroll(href="#experience") Experience
+      li#border-philosophy: a#nav-philosophy.smoothScroll(href="#philosophy") Philosophy
+      li#border-education: a#nav-education.smoothScroll(href="#education") Education
+      li#border-contact: a#nav-contact.smoothScroll(href="#contact") Contact
+    
+    .nav__icon-click            
+      .nav__icon
+        span
+        span
+        span
+        span
+        
+.nav__links--mobile#menu  
+  ul
+    li: a#nav-about.smoothScroll(href="#about") About
+    li: a#nav-experience.smoothScroll(href="#experience") Experience
+    li: a#nav-philosophy.smoothScroll(href="#philosophy") Philosophy
+    li: a#nav-education.smoothScroll(href="#education") Education
+    li: a#nav-contact.smoothScroll(href="#contact") Contact
