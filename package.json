@@ -1,7 +1,7 @@
 {
-  "name": "d3-test",
+  "name": "Alison Ingram Elementary Education",
   "version": "1.0.0",
-  "description": "Test charts using d3.js.",
+  "description": "Resume website for Alison Ingram, a soon to be graduate of Auburn University's Elementary Education program.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
