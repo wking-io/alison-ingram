@@ -34,7 +34,8 @@ module.exports = function(grunt) {
 		sass : {
 			dist: {
 				files: {
-					'css/main.css': 'scss/main.scss'
+					'css/main.css': 'scss/main.scss',
+          'css/new-work.css': 'scss/new-work.scss'
 				}
 			}
 		},
@@ -70,7 +71,8 @@ module.exports = function(grunt) {
     	},
     	my_target: {
       	files: {
-					'css/main.css':'css/main.css'
+					'css/main.css':'css/main.css',
+          'css/new-work.css': 'css/new-work.css'
 				}
     	}
   	},
