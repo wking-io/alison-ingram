@@ -130,4 +130,11 @@
       font-size: em(26);
     }
   }
+  .wrapper__one-column {
+    width: 80vw;
+
+    & p {
+      line-height: 1.4;
+    }
+  }
 }

@@ -782,10 +782,10 @@ nav {
     .about__title--divider {
       width: 20rem; }
   .about__headline {
-    font-size: 1.625em; }
+    font-size: 1.5em; }
 
   .wrapper__two-column {
-    width: 75vw; } }
+    width: 80vw; } }
 .experience {
   width: 100vw;
   height: auto;
@@ -1038,8 +1038,10 @@ nav {
   .experience__subtitle {
     font-size: 0.75em; }
   .experience__wrapper {
-    width: 80vw;
+    width: 90vw;
     padding: 0 0 3em 0; }
+  .experience__card {
+    margin: 0.7em 0; }
   .experience__three-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1056,7 +1058,6 @@ nav {
     outline: none;
     border-radius: 1.75em;
     background: #DCB570;
-    padding: .8em;
     min-height: 3.5em;
     min-width: 11.25em;
     color: rgba(255, 255, 255, 0.87);
@@ -1170,7 +1171,12 @@ nav {
     .philosophy__title--divider {
       width: 20rem; }
   .philosophy__headline {
-    font-size: 1.625em; } }
+    font-size: 1.625em; }
+
+  .wrapper__one-column {
+    width: 80vw; }
+    .wrapper__one-column p {
+      line-height: 1.4; } }
 .education {
   width: 100vw;
   height: auto;

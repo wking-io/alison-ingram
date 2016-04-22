@@ -275,8 +275,11 @@
       font-size: em(12);
     }
     &__wrapper {
-      width: 80vw;
+      width: 90vw;
       padding: 0 0 3em 0;
+    }
+    &__card {
+      margin: 0.7em 0;
     }
     &__three-column {
       flex-direction: column;
@@ -294,7 +297,6 @@
         outline: none;
         border-radius: em(28);
         background: $accent-color;
-        padding: .8em;
         min-height: em(56);
         min-width: em(180);
         color: $text-color-light;
